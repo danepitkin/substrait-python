@@ -26,7 +26,7 @@ git commit . -m "Use submodule <version>"
 Create a conda environment with developer dependencies.
 ```
 conda env create -f environment.yml
-conda activate substrait-python-env
+conda activate substrait-python-env-protobuf-v3.19.6
 ```
 
 # Build
@@ -37,7 +37,7 @@ pip install -e .
 ```
 
 ## Generate protocol buffers
-Generate the protobuf files manually. Requires protobuf `v3.20.1`.
+Generate the protobuf files manually. Uses protobuf `v3.19.6`.
 ```
 ./gen_proto.sh
 ```

@@ -10,7 +10,7 @@ dest_dir=./src/substrait/gen
 
 # Prefix the protobuf files with a unique configuration to prevent namespace conflicts
 # with other substrait packages. Save output to the work dir.
-python "$submodule_dir"/tools/proto_prefix.py "$tmp_dir" "$namespace" "$src_dir"
+python proto_prefix.py "$tmp_dir" "$namespace" "$src_dir"
 
 # Remove the old python protobuf files
 rm -rf "$dest_dir"
